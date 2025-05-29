@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2022",                  // Or a newer ECMAScript version compatible with your Node.js runtime
+    "module": "commonjs",                // Or "esnext" if you're using ES modules and configured Node.js accordingly
+    "lib": ["es2022"],                   // Or newer libs you're using
+    "esModuleInterop": true,             // Important for handling default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Recommended for cross-platform compatibility
+    "strict": true,                      // Enable all strict type-checking options (highly recommended)
+    "skipLibCheck": true,                // Skips type checking of declaration files, good for performance
+    "outDir": "./dist",                  // Where your compiled JavaScript will go
+    "rootDir": "./src",                  // Where your source TypeScript files are
+    "resolveJsonModule": true,           // Allows importing .json files
+    "sourceMap": true,                   // Generates source maps for debugging
+    "noImplicitAny": true,               // Ensures all variables have explicit or inferred types
+    "allowJs": true,                     // Allow JavaScript files to be part of your project
+    "declaration": true                  // Generates declaration files (.d.ts)
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"], // Or your specific source file pattern
+  "exclude": ["node_modules"]
+}
