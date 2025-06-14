@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
     "target": "es2022",                  // Or a newer ECMAScript version compatible with your Node.js runtime
     "module": "commonjs",                // Or "esnext" if you're using ES modules and configured Node.js accordingly
     "lib": ["es2022"],                   // Or newer libs you're using
